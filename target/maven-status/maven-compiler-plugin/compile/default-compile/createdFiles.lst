@@ -1,0 +1,9 @@
+com\mycompany\mental_health\model\Psicologo.class
+com\mycompany\mental_health\dao\UsuarioDAO.class
+com\mycompany\mental_health\control\AdminPsicologo.class
+com\mycompany\mental_health\control\AdminUsuario.class
+com\mycompany\mental_health\resources\JakartaEE11Resource.class
+com\mycompany\mental_health\JakartaRestConfiguration.class
+com\mycompany\mental_health\model\Usuario.class
+com\mycompany\mental_health\dao\PsicologoDAO.class
+com\mycompany\mental_health\util\DB.class

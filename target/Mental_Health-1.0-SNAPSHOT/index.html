@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio | Salud Mental</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fbff;
+            margin: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #00b4d8, #0077b6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        form input[type="submit"] {
+            margin: 10px;
+            background-color: #00b894;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mental Security</h1>
+    <h2>"Cuidamos tu salud mental"</h2>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="registroUsuario.html">Registro Usuario</a>
+        <a href="registroPsicologo.html">Registro Psicólogo</a>
+        <a href="listaPsicologos.jsp">Lista Psicólogos</a>
+        <a href="gestionarUsuario.jsp">Gestionar Usuarios</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Forma parte de nuestra comunidad</h2>
+    <p>Ya sea que necesites ayuda como usuario o desees brindar acompañamiento como psicólogo, este es tu lugar. Estamos contigo.</p>
+
+    <form action="registroUsuario.html" method="get">
+        <input type="submit" value="🧑 Registrarse como Usuario">
+    </form>
+    <form action="gestionarUsuario.jsp" method="get">
+    <input type="submit" value="🛠 Gestionar Usuarios">
+    </form>
+    <form action="registroPsicologo.html" method="get">
+        <input type="submit" value="👨‍⚕️ Registrarse como Psicólogo">
+    </form>
+    <form action="listaPsicologos.jsp" method="get">
+        <input type="submit" value="📋 Ver Psicólogos Registrados">
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Plataforma de Salud Mental. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

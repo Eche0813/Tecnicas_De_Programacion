@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Usuario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #38b000, #007f5f);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007f5f;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #00694e;
+        }
+        footer {
+            background-color: #007f5f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        .alert {
+        padding: 12px 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 6px;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        .alert.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Registro de Usuario</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+</header>
+
+<main>
+    <form action="adminUsuario" method="post">
+        <input type="hidden" name="accion" value="registrar">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <input type="submit" value="Registrarse">
+    </form>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("registro") === "ok") {
+        document.write('<div class="alert success">✅ Registro exitoso.</div>');
+    }
+</script>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Plataforma de Salud Mental</p>
+</footer>
+
+</body>
+</html>
+
